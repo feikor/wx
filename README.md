@@ -20,3 +20,5 @@ component_access_token            #第三方平台通过自己的component_appid
 获取预授权码pre_auth_code          #第三方平台通过自己的接口调用凭据（component_access_token）来获取用于授权流程准备的预授权码（pre_auth_code）
 4使用授权码换取公众号或小程序的接口调用凭据和授权信息(授权人访问令牌authorizer_access_token)
 authorizer_access_token          #通过授权码和自己的接口调用凭据（component_access_token），换取公众号或小程序的接口调用凭据（authorizer_access_token和用于前者快过期时用来刷新它的authorizer_refresh_token）和授权信息（授权了哪些权限等信息）
+5获取（刷新）授权公众号或小程序的接口调用凭据	
+authorizer_refresh_token #通过authorizer_refresh_token来刷新公众号或小程序的接口调用凭据
